@@ -21,6 +21,15 @@
 #ifndef FILEMD5HASH_H
 #define FILEMD5HASH_H
 
+// Extern
+#ifndef FILEMD5HASH_EXTERN
+    #if defined(__cplusplus)
+        #define FILEMD5HASH_EXTERN extern "C"
+    #else
+        #define FILEMD5HASH_EXTERN extern
+    #endif
+#endif
+
 //---------------------------------------------------------
 // Includes
 //---------------------------------------------------------
